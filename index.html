@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="제가 만든 북마크입니다.">
+    <title>- 북마크 -</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">
+            <i class="fas fa-book"></i>
+            건호`s <span class="text1">북</span>마크
+        </h1>
+        <form id="book-form">
+            <div class="group">
+                <label for="title">제목</label>
+                <input type="text" id="input-title" class="control" autocomplete="off">
+            </div>
+            <div class="group">
+                <label for="author">작가</label>
+                <input type="text" id="input-author" class="control" autocomplete="off">
+            </div>
+            <div class="group">
+                <label for="isbn">책번호#</label>
+                <input type="text" id="input-isbn" class="control" autocomplete="off">
+            </div>
+            <input type="submit" value="책 추가" class="btn">
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>작가</th>
+                    <th>책번호#</th>
+                    <th>삭제</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
